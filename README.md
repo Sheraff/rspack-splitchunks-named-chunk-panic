@@ -1,5 +1,7 @@
 # Rspack panic: splitChunks cache group named like a `webpackChunkName` chunk
 
+Issue: https://github.com/web-infra-dev/rspack/issues/16289
+
 `src/index.js` imports `./lazy.js` twice, once with `webpackChunkName: "named"` and once without. A cache group in
 `rspack.config.mjs` has `name: 'named'`.
 
